@@ -1,0 +1,3 @@
+[submodule "scripts/github-status"]
+	path = scripts/github-status
+	url = https://gist.github.com/68969fd36341e5631ddb.git
