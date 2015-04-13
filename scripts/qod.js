@@ -20,7 +20,7 @@
     return robot.respond(/qod/i, function(msg) {
       return msg.http('http://api.theysaidso.com/qod.json').get()(function(err, res, body) {
         var data = JSON.parse(body);
-        return msg.send('"' + data.quote + '" - ' + data.author);
+        return msg.send('"' + data.contents.quote + '" - ' + data.contents.author);
       });
     });
   };
